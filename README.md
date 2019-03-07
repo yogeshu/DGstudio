@@ -67,3 +67,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### GUN JS DEPENDENCY
+
+Libraries are included in gunjs directory under "/src" are used to run gun server using javascript in html.
