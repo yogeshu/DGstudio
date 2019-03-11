@@ -12,7 +12,8 @@ export default class UserRegistration extends Component {
                 };
     this.onChangeUserName = this.onChangeUserName.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
-    this.onChangePassword = this.onChangePassword.bind(this); 
+    this.onChangePassword = this.onChangePassword.bind(this);
+    this.emailvalidation = this.emailvalidation.bind(this);
     this.onSubmit = this.onSubmit.bind(this);            
 
   }
