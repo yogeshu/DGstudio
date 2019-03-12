@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+import Gun from 'gun/gun';
+require('gun/sea');
 
 export default class UserRegistration extends Component {
   constructor(props){
@@ -39,13 +41,23 @@ export default class UserRegistration extends Component {
       success=1;
     }
     if(success===0){
-      alert('Please enter proper email'+email_input);
+
       this.setState({email:''});
     }
   }
 
   onSubmit(e) {
     e.preventDefault();
+    const obj = {
+
+      username: this.state.username,
+      password: this.state.password
+    }
+
+    var gun = Gun();
+    var user = gun.user();
+
+    user.create(obj.username, obj.password)
     console.log(`The values are ${this.state.email}, ${this.state.username}, and ${this.state.password}`)
     this.setState({
       email: '',
@@ -67,7 +79,7 @@ export default class UserRegistration extends Component {
                         <div className="label-style"><label><br></br><br></br><b>Email</b></label></div>
                           <input 
                             type="text" 
-                            required="required" 
+
                             value={this.state.email}
                             className="form-control" 
                             style={{width:'90%'}} 

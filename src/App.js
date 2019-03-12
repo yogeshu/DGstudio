@@ -6,6 +6,9 @@ import UserLogin from './components/userlogin';
 import Home from './components/home';
 import UserRegistration from './components/userregistration';
 
+import Gun from 'gun/gun';
+require('gun/sea');
+
 class App extends Component {
   render() {
     return (
