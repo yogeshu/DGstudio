@@ -3,12 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.18.3",
     "bootstrap": "^4.3.1",
+    "cors": "^2.8.5",
     "create-react-app": "^2.1.5",
     "create-react-app-updater": "^0.6.0",
-    "gun": "^0.9.9999991",
+    "express": "^4.16.4",
+    "gun": "file:../..",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-gun": "^1.1.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.5"
   },
   "scripts": {
@@ -25,5 +32,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "style-loader": "^0.23.1"
+  }
 }
